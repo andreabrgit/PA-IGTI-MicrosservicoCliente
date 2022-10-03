@@ -19,7 +19,7 @@ namespace PA_IGTI_ClienteService.Controllers
     public IActionResult Get()
     {
       string connectionString =
-        "Server=fabricabh-sql-srv.database.windows.net;Database=ClientesDB;User Id=fabrica; Password=Pa55@5qL";
+        "Server=fabricabh-sql-srv.database.windows.net;Database=ClientesDB;User Id=SI$Cliente; Password=cl13n7#5qL";
 
       string queryString =
           "SELECT * FROM Cliente";

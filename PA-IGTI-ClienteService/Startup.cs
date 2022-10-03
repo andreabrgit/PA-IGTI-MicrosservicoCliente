@@ -20,6 +20,7 @@ namespace PA_IGTI_ClienteService
     public void ConfigureServices(IServiceCollection services)
     {
 
+
       services.AddCors(o => o.AddPolicy("AnyOrigin", builder =>
       {
         builder.AllowAnyOrigin()
@@ -53,6 +54,8 @@ namespace PA_IGTI_ClienteService
       app.UseHttpsRedirection();
 
       app.UseRouting();
+
+      app.UseCors("AnyOrigin");
 
       app.UseAuthorization();
 
